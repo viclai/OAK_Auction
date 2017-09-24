@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auction Search</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/suggestions.css" />
+        <script src="js/autosuggest.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                var oTextbox = new AutoSuggestControl(
+                    document.getElementsByName("q")[0],
+                    new SuggestionProvider()
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <form action="/eBay/search" method="GET">
+            <input type="text" name="q" autocomplete="off" />
+            <input type="submit" value="Search" />
+            <input type="hidden" name="numResultsToSkip" value="0" />
+            <input type="hidden" name="numResultsToReturn" value="30" />
+        </form>
+    </body>
+</html>
