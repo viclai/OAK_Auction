@@ -8,6 +8,7 @@ Based on the information given in the auction data, the following relations
 were created in the MySQL database.
 
 **Item**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ItemID         | `int(11)`       | No   | Primary |
@@ -23,18 +24,21 @@ were created in the MySQL database.
 | Description    | `varchar(4000)` | No   |         |
 
 **ItemCategory**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ItemID         | `int(11)`       | No   | Primary |
 | Category       | `varchar(40)`   | No   | Primary |
 
 **ItemBuyPrice**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ItemID         | `int(11)`       | No   | Primary |
 | Buy_Price      | `decimal(8,2)`  | No   |         |
 
 **Bid**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | BidderID       | `varchar(40)`   | No   | Primary |
@@ -43,6 +47,7 @@ were created in the MySQL database.
 | Amount         | `decimal(8,2)`  | No   |         |
 
 **UserLocation**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ID             | `varchar(40)`   | No   | Primary |
@@ -50,18 +55,21 @@ were created in the MySQL database.
 | Country        | `varchar(20)`   | Yes  |         |
 
 **BidderRating**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ID             | `varchar(40)`   | No   | Primary |
 | Rating         | `int(11)`       | No   |         |
 
 **SellerRating**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ID             | `varchar(40)`   | No   | Primary |
 | Rating         | `int(11)`       | No   |         |
 
 **ItemLocation**
+
 | Field          | Type            | Null | Key     |
 | -------------- | --------------- | ---- | ------- |
 | ItemID         | `int(11)`       | No   | Primary |
