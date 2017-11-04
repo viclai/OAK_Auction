@@ -6,6 +6,8 @@
 which provides a website that allows users to search and navigate auction
 bidding data from eBay. This project was created for educational purposes.
 
+![Website](hub/oak_auction.gif "OAK Auction")
+
 ## Usage
 
 Because this project was developed on a virtual machine, there is currently no
